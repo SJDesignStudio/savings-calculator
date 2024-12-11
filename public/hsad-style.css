@@ -1,0 +1,2713 @@
+/*
+================================
+HSAD BASE 2023
+================================
+*/
+.dark-copy {
+  color: #000;
+}
+.light-copy {
+  color: #fff;
+}
+.dark-copy div.cta a.newbtn.outlinew {
+  margin: 2px auto;
+  outline: 2px solid #000;
+  background-color: transparent;
+  color: #000;
+}
+.light-copy div.cta a.newbtn.outlinew {
+  margin: 2px auto;
+  outline: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+.breadcrumb {
+  color: #fff;
+  display: none !important;
+}
+.container-skel .row {
+  margin: 0px; /* override bootstrap */
+}
+.section {
+  font-family: "LG Smart Regular";
+  font-weight: 400;
+  color: #000;
+}
+.section a:hover {
+  text-decoration: none;
+}
+.section img {
+  max-width: 100%;
+}
+.section ul {
+  margin: 0;
+  padding: 0;
+}
+.section ul li,
+ol li {
+  margin-bottom: 0px;
+  list-style: none;
+}
+.section .red,
+.red a {
+  color: #a50034 !important;
+  text-decoration: underline;
+}
+.section .bold,
+.bold {
+  font-family: "LG Smart Bold";
+}
+.section .center {
+  text-align: center;
+}
+.footer-box .footer-component .footer-caution {
+  padding: 0 30px;
+}
+.for-mobile {
+  display: none !important;
+}
+.row-skel:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding-bottom: 2%;
+}
+#respoiframe {
+  min-height: 93vh !important;
+}
+video {
+  width: 100%;
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+#sticky {
+  top: 0px;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 100;
+}
+#hidden-lightbox .copy img {
+  max-width: 100%;
+}
+/* sup {
+    top: -1.5em;
+    font-size: 30%;
+} */
+.fine {
+  font-size: 12px;
+  line-height: 18px;
+  padding: 20px 0px;
+}
+.radius30 {
+  border-radius: 30px;
+}
+
+/*
+================================================================================================
+BUTTONS 
+================================================================================================
+*/
+.cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+div.cta a.newbtn,
+a[data-ms-action="default-product"],
+a[data-ms-action="default-product-static"],
+a[data-ms-action="personalized-product"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 21px;
+  border: none;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  outline: none;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px 18px;
+  margin: 0;
+  outline: 2px solid transparent;
+  max-height: 42px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.05em;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  background-color: #a60032;
+  color: white;
+}
+
+div.cta a.newbtn:not(:first-of-type) {
+  margin-left: 1rem;
+}
+
+div.cta a.newbtn:active,
+a[data-ms-action="default-product"]:active,
+a[data-ms-action="default-product-static"]:active,
+a[data-ms-action="personalized-product"]:active {
+  color: #000;
+}
+
+div.cta a::after,
+div.cta_btn a::after,
+a[data-ms-action="default-product"]::after,
+a[data-ms-action="default-product-static"]::after,
+a[data-ms-action="personalized-product"]::after {
+  content: "";
+  border-radius: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+div.cta a:hover::after,
+div.cta_btn a:hover::after,
+a[data-ms-action="default-product"]:hover::after,
+a[data-ms-action="default-product-static"]:hover::after,
+a[data-ms-action="personalized-product"]:hover::after {
+  left: 100%;
+}
+
+div.cta a.newbtn::after,
+a[data-ms-action="default-product"]::after,
+a[data-ms-action="default-product-static"]::after,
+a[data-ms-action="personalized-product"]::after {
+  background-color: #fd312d;
+}
+
+div.cta a.newbtn:hover::after,
+a[data-ms-action="default-product"]:hover::after,
+a[data-ms-action="default-product-static"]:hover::after,
+a[data-ms-action="personalized-product"]:hover::after {
+  background-color: #a60032;
+}
+
+div.cta a.newbtn:active,
+a[data-ms-action="default-product"]:active,
+a[data-ms-action="default-product-static"]:active,
+a[data-ms-action="personalized-product"]:active {
+  background-color: white;
+  color: black;
+  outline: 2px solid black;
+}
+a[data-ms-action="default-product"],
+a[data-ms-action="default-product-static"],
+a[data-ms-action="personalized-product"] {
+  width: 100%;
+}
+
+div.cta a.newbtn.outline,
+div.cta a.newbtn.outlinew {
+  height: 40px;
+  margin: 1rem auto;
+  max-width: 90%;
+}
+
+div.cta a.newbtn.outline {
+  outline: 2px solid #000;
+  background-color: transparent;
+  color: #000;
+  transition: color 0.4s ease;
+  transition-delay: color 0.3s;
+  max-height: 38px;
+  margin: 8px auto;
+}
+
+div.cta a.newbtn.outline:hover {
+  color: #fff;
+  outline: 2px solid transparent;
+  max-height: 42px;
+  margin: 7px auto;
+}
+
+div.cta a.newbtn.outline::after {
+  -webkit-transform: translateX(-200%);
+  -ms-transform: translateX(-200%);
+  transform: translateX(-200%);
+  background-color: transparent;
+}
+
+div.cta a.newbtn.outline:hover::after {
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+  background-color: #fd312d;
+}
+
+div.cta a.newbtn.outline:active::after {
+  color: #fff;
+  outline: 2px solid transparent;
+  background-color: #a60032;
+}
+
+div.cta a.newbtn.outlinew {
+  margin: 2px auto;
+  outline: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+
+div.cta a.newbtn.outlinew:hover {
+  color: #fff;
+  height: 42px;
+  outline: 2px solid transparent;
+  margin: 1px auto;
+}
+div.cta a.newbtn.outline::after,
+div.cta a.newbtn.outlinew::after {
+  -webkit-transform: translateX(-200%);
+  -ms-transform: translateX(-200%);
+  transform: translateX(-200%);
+  background-color: transparent;
+  border-radius: 0;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 0%,
+    calc(100% - 6.4px) 1px,
+    calc(100% - 10.8px) 3px,
+    calc(100% - 14.7px) 6px,
+    calc(100% - 17.8px) 10px,
+    calc(100% - 20.4px) 16px,
+    calc(100% - 21px) 21px,
+    calc(100% - 20.4px) 26px,
+    calc(100% - 17.8px) 32px,
+    calc(100% - 14.7px) 36px,
+    calc(100% - 10.8px) 39px,
+    calc(100% - 6.4px) 41px,
+    100% 42px,
+    100% 100%,
+    0% 100%
+  );
+  -webkit-clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 0%,
+    calc(100% - 6.4px) 1px,
+    calc(100% - 10.8px) 3px,
+    calc(100% - 14.7px) 6px,
+    calc(100% - 17.8px) 10px,
+    calc(100% - 20.4px) 16px,
+    calc(100% - 21px) 21px,
+    calc(100% - 20.4px) 26px,
+    calc(100% - 17.8px) 32px,
+    calc(100% - 14.7px) 36px,
+    calc(100% - 10.8px) 39px,
+    calc(100% - 6.4px) 41px,
+    100% 42px,
+    100% 100%,
+    0% 100%
+  );
+}
+
+div.cta a.newbtn.outline:hover::after,
+div.cta a.newbtn.outlinew:hover::after {
+  width: 200%;
+  -webkit-transform: translateX(-70%);
+  -ms-transform: translateX(-70%);
+  transform: translateX(-70%);
+  background-color: #fd312d;
+}
+div.cta a.newbtn.outline:active::after,
+div.cta a.newbtn.outlinew:active::after {
+  color: #fff;
+  outline: 2px solid transparent;
+  height: 42px;
+  background-color: #a60032;
+}
+
+/* ALL IPAD PROS */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  div.cta a.newbtn,
+  a[data-ms-action="default-product"],
+  a[data-ms-action="default-product-static"],
+  a[data-ms-action="personalized-product"] {
+    font-size: 11px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: 599px) {
+  .cta {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .section.hero .hero-card div.cta a.newbtn {
+    width: 100%;
+  }
+  .section.hero .hero-card div.cta a.newbtn:not(:first-of-type) {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+  .dark-copy div.cta a.newbtn.outlinew,
+  .light-copy div.cta a.newbtn.outlinew {
+    margin: 2px auto !important;
+    outline: 2px solid #000 !important;
+    background-color: transparent !important;
+    color: #000 !important;
+  }
+
+  div.cta a.newbtn {
+    width: 100%;
+  }
+
+  div.cta a.newbtn:not(:first-of-type) {
+    margin-left: 0rem;
+  }
+
+  div.cta a.newbtn.outline,
+  div.cta a.newbtn.outlinew {
+    max-width: 100%;
+  }
+}
+
+.gallery-large .prod-card .image img {
+  max-height: 155px;
+  margin: 0 auto;
+}
+@font-face {
+  font-display: swap;
+  font-family: LG Smart UI;
+  font-style: normal;
+  font-weight: 700;
+  src: local("LG Smart UI Bold"), local("LGSmartUI-Bold"),
+    url(https://www.lg.com/etc.clientlibs/lge/clientlibs/clientlib-site/resources/fonts/LGSmartUI-Bold.woff2)
+      format("woff2"),
+    url(https://www.lg.com/etc.clientlibs/lge/clientlibs/clientlib-site/resources/fonts/LGSmartUI-Bold.woff)
+      format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: LG Smart UI;
+  font-style: normal;
+  font-weight: 400;
+  src: local("LG Smart UI Bold"), local("LGSmartUI-Bold"),
+    url(https://www.lg.com/etc.clientlibs/lge/clientlibs/clientlib-site/resources/fonts/LGSmartUI-Regular.woff2)
+      format("woff2"),
+    url(https://www.lg.com/etc.clientlibs/lge/clientlibs/clientlib-site/resources/fonts/LGSmartUI-Regular.woff)
+      format("woff");
+}
+div.cta a.newbtn,
+a[data-ms-action="default-product"],
+a[data-ms-action="default-product-static"],
+a[data-ms-action="default-product-static"] {
+  font-family: LG Smart UI, Segoe UI, "Microsoft Sans Serif", sans-serif;
+}
+
+/*
+================================================================================================
+SECTITLE 
+================================================================================================
+*/
+.sectitle {
+  text-align: center;
+  font-size: 20px;
+  line-height: 26px;
+  padding: 40px 0px;
+  color: #666666;
+}
+.sectitle .title h2 {
+  font-family: "LG Smart Regular";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  padding-top: 25px;
+  color: #000;
+}
+.sectitle .title h2 sup {
+  top: -1.5em;
+  font-size: 30%;
+}
+@media (max-width: 599px) {
+  .sectitle {
+    text-align: center;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 0px;
+    color: #666666;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 0 0 0;
+  }
+
+  .sectitle .title h2 {
+    font-family: "LG Smart Regular";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    padding: 40px 0 0 0;
+    color: #000;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/*
+================================================================================================
+HERO 
+================================================================================================
+*/
+.section.hero {
+  padding: 0px 0px 0px 0px;
+}
+.section.hero .copy a {
+  text-decoration: underline;
+  color: white;
+}
+.section.hero video {
+  width: 100%;
+}
+.hero-card {
+  position: relative;
+}
+.hero-card.black {
+  color: #000;
+}
+.hero-card.white {
+  color: #fff;
+}
+.hero-card-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.hero-card-overlay-left {
+  top: 45%;
+  left: 24%;
+  width: 545px;
+  font-size: 20px;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+.hero-card-overlay-right {
+  top: 50%;
+  left: 75%;
+  width: 600px;
+  font-size: 20px;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+.hero-card-overlay-center {
+  top: 67%;
+  left: 50%;
+  width: 600px;
+  font-size: 20px;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.hero-card-overlay-center .cta {
+  width: 140px;
+  margin: 0 auto;
+}
+.hero-card .copyblock .eyebrow {
+  font-size: 14px;
+  line-height: 26px;
+  padding-bottom: 10px;
+  letter-spacing: 0.071em;
+  text-transform: uppercase;
+}
+.hero-card .copyblock .title h2 {
+  font-family: "LG Smart Regular";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+}
+.hero-card .copyblock .copy {
+  font-size: 20px;
+  line-height: 26px;
+  padding: 20px 0px 30px 0px;
+}
+.hero-card .copyblock .copy sup {
+  top: -1em;
+  font-size: 50%;
+}
+
+.hero-card .copyblock .title h2 sup {
+  top: -1.5em;
+  font-size: 30%;
+}
+.hero-card.for-mobile .copyblock {
+  padding: 30px;
+  min-height: 400px;
+}
+@media (min-width: 900px) and (max-width: 1199px) {
+  .hero-card-overlay-left {
+    top: 48%;
+    left: 24%;
+    width: 35%;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: left;
+  }
+  .hero-card-overlay-right {
+    top: 48%;
+    left: 75%;
+    width: 35%;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: left;
+  }
+  .hero-card .copyblock .eyebrow {
+    font-size: 14px;
+    line-height: 20px;
+    /* padding-bottom: 10px; */
+    letter-spacing: 0.071em;
+  }
+  .hero-card .copyblock .title h2 {
+    padding-bottom: 10px;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .hero-card .copyblock .copy {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0px 0px 15px 0px;
+  }
+}
+@media (max-width: 899px) {
+  .section.hero {
+    padding: 0px 0px 40px 0px;
+    background-color: #fff;
+  }
+  .section.hero .dark-copy,
+  .section.hero .light-copy {
+    color: #000;
+  }
+}
+@media (min-width: 600px) and (max-width: 899px) {
+  .hero-card-overlay-left,
+  .hero-card-overlay-right,
+  .hero-card-overlay-center {
+    top: 70%;
+    left: 50%;
+    width: 90%;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: left;
+  }
+  .hero-card.white,
+  .hero-card.black {
+    color: #000;
+  }
+  .section.largecards .hero-card .copyblock {
+    padding: 30px 50px 50px 50px;
+  }
+  .hero-card .copyblock .eyebrow {
+    min-height: 25px;
+  }
+  .hero-card .copyblock .title h2 {
+    padding-bottom: 20px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .hero-card .copyblock .copy {
+    padding: 0px 0px 10px 0px;
+    min-height: 100px;
+  }
+}
+@media (max-width: 599px) {
+  .section.hero {
+    padding: 0px 0px 40px 0px;
+    background-color: #fff;
+  }
+  .section.hero .dark-copy,
+  .section.hero .light-copy {
+    color: #000;
+  }
+  .section.hero {
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+  }
+  .section.hero .container-skel {
+    padding: 0px;
+  }
+  .section.hero .copy a {
+    text-decoration: underline;
+    color: #000;
+  }
+  .hero-card {
+    padding-bottom: 40px;
+  }
+  .hero-card.white,
+  .hero-card.black {
+    color: #000;
+  }
+  .hero-card-overlay-left,
+  .hero-card-overlay-right,
+  .hero-card-overlay-center {
+    top: 65%;
+    left: 50%;
+    width: 90%;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: left;
+  }
+  .hero-card .copyblock .eyebrow {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 10px;
+    min-height: 25px;
+  }
+  .hero-card .copyblock .title h2 {
+    font-family: "LG Smart Regular";
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 36px;
+  }
+  .hero-card .copyblock .copy {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0px 0px 25px 0px;
+    min-height: 100px;
+  }
+  .section.hero .newbtn {
+    width: 100%;
+    text-align: center;
+  }
+  .hero-card-overlay-center .cta {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/*
+================================================================================================
+LARGE CAROUSEL
+================================================================================================
+*/
+.section.productfeatures .container-skel {
+  background-color: #f9f7f4;
+  padding: 0 0 70px 0px;
+}
+.section.productfeatures .offset-by-one.columns {
+  margin-left: 7.66666666667%;
+}
+.section.productfeatures .ten.columns {
+  width: 84.6666666667%;
+}
+.gallery-large .left-block img {
+  border-radius: 40px;
+}
+.gallery-large .prod-wrap {
+  position: relative;
+  flex: 1;
+  flex-grow: 1; /* height control */
+}
+.gallery-large .prod-wrap:first-child {
+  margin-bottom: 26%;
+}
+.gallery-large .prod-card {
+  margin: 0 0 13% 0;
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 1px 2px rgba(27, 26, 30, 0.15);
+  border-radius: 40px;
+}
+.gallery-large .prod-card h2 {
+  font-family: "LG Smart Regular";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 24px;
+  padding: 20px 0px;
+  color: #6b6b6d;
+  width: 100%;
+  margin: 0 auto;
+  /* character limit */
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  height: 70px;
+}
+.gallery-large .prod-card .newbtn.outline {
+  display: inline-block;
+  margin: 0;
+  letter-spacing: 0.05em;
+  border: 0px solid #a50034;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #a50034;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: antialiased;
+}
+.gallery-large .prod-card .newbtn.outline:hover,
+.gallery-large .prod-card .newbtn.outline:focus {
+  background-color: #fff;
+  color: #c40043;
+}
+@media (min-width: 900px) and (max-width: 1199px) {
+  .gallery-large .prod-card {
+    margin: 0%;
+  }
+  .gallery-large .right-block {
+    padding: 30px 0 0 0px;
+  }
+  .gallery-large .left-block.nine.columns {
+    width: 100%;
+  }
+  .gallery-large .right-block.three.columns {
+    width: 100%;
+    margin: 0%;
+  }
+  .gallery-large .prod-card {
+    width: 48%;
+    float: left;
+    box-sizing: border-box;
+  }
+  .gallery-large .prod-card:first-child {
+    margin-right: 4%;
+  }
+}
+@media (max-width: 800px) {
+  .gallery-large .card-01 {
+    flex: 100%;
+  }
+  .gallery-large .card-small h2 {
+    font-family: "LG Smart Regular";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    padding: 20px 0px;
+    color: #6b6b6d;
+    width: 100%;
+    margin: 0 auto;
+    /* character limit */
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    height: 70px;
+  }
+}
+@media (min-width: 600px) and (max-width: 899px) {
+  .gallery-large .prod-card {
+    margin: 0%;
+  }
+  .gallery-large .right-block {
+    padding: 30px 0 0 0px;
+  }
+  .gallery-large .left-block.nine.columns {
+    width: 100%;
+  }
+  .gallery-large .right-block.three.columns {
+    width: 100%;
+    margin: 0%;
+  }
+  .gallery-large .prod-card {
+    width: 48%;
+    float: left;
+    box-sizing: border-box;
+  }
+  .gallery-large .prod-card:first-child {
+    margin-right: 4%;
+  }
+}
+@media (max-width: 599px) {
+  .gallery-large .right-block {
+    max-width: 100%;
+    width: inherit;
+    flex: 100%;
+    flex-direction: inherit;
+    padding: 30px 0;
+  }
+  .gallery-large .prod-card:first-child {
+    margin-right: 5%;
+  }
+  .gallery-large .prod-card {
+    flex-direction: column !important;
+    float: left;
+    width: 47%;
+    height: inherit;
+  }
+}
+
+/*
+================================================================================================
+SECTION EPROMOS
+================================================================================================
+*/
+.section.epromos {
+  padding: 30px 0 100px 0;
+}
+.section.epromos .offset-by-one.columns {
+  margin-left: 3.66666666667%;
+}
+.section.epromos .ten.columns {
+  width: 92.6666666667%;
+}
+.epromos .epromos-custombg {
+  background-color: #fff;
+  -webkit-border-top-left-radius: 50px;
+  -webkit-border-top-right-radius: 50px;
+  -moz-border-radius-topleft: 50px;
+  -moz-border-radius-topright: 50px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+.section.epromos .row {
+  clear: both;
+}
+.section.epromos .row.one {
+  padding-bottom: 60px;
+}
+.section.epromos .row.two {
+  padding-bottom: 80px;
+}
+
+.section.epromos .three.columns {
+  width: 23%;
+  margin-left: 2%;
+}
+@media (min-width: 900px) and (max-width: 1199px) {
+  .section.epromos .hero-card-overlay-left,
+  .section.epromos .hero-card-overlay-right,
+  .section.epromos .hero-card-overlay-center {
+    top: 50%;
+    left: 63%;
+    width: 60%;
+    color: #fff;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: right;
+  }
+  .section.epromos .hero-card .copyblock .title h2 {
+    padding-bottom: 20px;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .section.epromos .hero-card .copyblock .copy {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0px 0px 10px 0px;
+  }
+}
+@media (max-width: 599px) {
+  .section.epromos .container-skel {
+    padding: 0px;
+  }
+  .section.epromos .section.hero {
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+  }
+  .section.epromos .hero-card-overlay-left,
+  .section.epromos .hero-card-overlay-right,
+  .section.epromos .hero-card-overlay-center {
+    top: 74%;
+    left: 55%;
+    width: 335px;
+    color: #fff;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: left;
+  }
+  .section.epromos .hero-card .copyblock .eyebrow {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 10px;
+  }
+  .section.epromos .hero-card .copyblock .title h2 {
+    font-family: "LG Smart Regular";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .section.epromos .hero-card .copyblock .copy {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 0px 0 20px 0;
+  }
+  .section.epromos .newbtn {
+    width: 90%;
+  }
+  .section.epromos {
+    padding: 30px 0 50px 0;
+  }
+  .section.epromos .three.columns {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+
+/*
+================================================================================================
+ZOOM CARD
+================================================================================================
+*/
+.card-zoom article {
+  --img-scale: 1.001;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: none;
+  transform-origin: center;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  background-color: #fff;
+  color: #000;
+}
+.card-zoom article a::after {
+  position: absolute;
+  inset-block: 0;
+  inset-inline: 0;
+  cursor: pointer;
+  content: "";
+}
+.card-zoom article figure {
+  margin: 0;
+  padding: 0;
+  /* aspect-ratio: 16 / 9; */
+  overflow: hidden;
+  border-radius: 20px 20px 0px 0px;
+}
+.card-zoom article img {
+  max-width: 100%;
+  transform-origin: center;
+  transform: scale(var(--img-scale));
+  transition: transform 0.4s ease-in-out;
+}
+.card-zoom .article-body {
+  padding: 20px;
+}
+.card-zoom a.newbtn {
+  width: 100% !important;
+}
+
+/* using the has() relational pseudo selector to update our custom properties */
+.card-zoom article:has(:hover, :focus) {
+  --img-scale: 1.1;
+}
+.card-zoom article .copyblock .title h2 {
+  font-family: "LG Smart Regular";
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 29px;
+  min-height: 100px;
+}
+.card-zoom article .copyblock .copy {
+  font-size: 20px;
+  line-height: 26px;
+  padding: 20px 0px 30px 0px;
+  min-height: 275px;
+  color: #767678;
+}
+@media screen and (max-width: 960px) {
+  .card-zoom article {
+    container: card/inline-size;
+  }
+  .card-zoom article-body p {
+    display: none;
+  }
+}
+
+@container card (min-width: 380px) {
+  .card-zoom article-wrapper {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 16px;
+  }
+  .card-zoom article-body {
+    padding-left: 0;
+  }
+  .card-zoom article figure {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .card-zoom article figure img {
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+}
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  .card-zoom article .copyblock .title h2 {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0px;
+  }
+
+  .card-zoom article .copyblock .copy {
+    font-size: 18px;
+    line-height: 20px;
+    padding: 20px 0px 30px 0px;
+    min-height: 210px;
+  }
+}
+
+/* ALL IPAD PROS */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .card-zoom article .copyblock .copy {
+    /* font-size: 18px;
+        line-height: 20px; */
+    font-size: 1rem;
+    line-height: 1.4rem;
+    padding: 20px 0px 30px 0px;
+    min-height: 360px;
+  }
+}
+
+@media (max-width: 599px) {
+  .card-zoom {
+    padding-bottom: 50px;
+  }
+  .card-zoom article .copyblock .title h2 {
+    font-family: "LG Smart Regular";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .card-zoom article .copyblock .copy {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 20px 0px;
+  }
+  .card-zoom article .copyblock .newbtn.outlinew {
+    width: 100%;
+    text-align: center;
+  }
+  .card-zoom article .copyblock .copy {
+    min-height: inherit;
+  }
+  .card-zoom .article-body {
+    min-height: inherit;
+    padding-bottom: 50px;
+  }
+  .card-zoom article .copyblock .title h2 {
+    min-height: inherit;
+  }
+}
+
+/*
+================================================================================================
+SLICK SLIDER
+================================================================================================
+*/
+.slider.slick-hero-desktop > slick-track:not(:first-child) {
+  display: none;
+}
+/* remove pagination dots on sigle card */
+.slick-dots {
+  > li {
+    display: inline-block;
+  }
+  > li:only-child {
+    display: none;
+  }
+}
+
+.section.hero .slick-slide {
+  margin: 0px;
+}
+.slick-slide {
+  margin: 0 10px;
+}
+.slide-arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.prev-arrow {
+  left: -40px;
+  z-index: 1;
+  border: solid #767676;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  overflow: hidden;
+  width: 30px;
+  height: 30px;
+}
+.next-arrow {
+  right: -40px;
+  border: solid #767676;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+}
+.slider.slick-hero .prev-arrow {
+  left: 20px;
+}
+.slider.slick-hero .next-arrow {
+  right: 20px;
+}
+.next-arrow:hover,
+.prev-arrow:hover {
+  border: solid #000;
+  border-width: 0 3px 3px 0;
+}
+.slick-slide .slide-content {
+  width: 100%;
+  margin: 0 auto;
+}
+.slick-list {
+  margin: 0px;
+}
+.slick-prev,
+.slick-next {
+  position: absolute;
+  right: calc(50% - 8.625rem);
+  border: none;
+  color: transparent;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  line-height: 0;
+  position: absolute;
+  top: 100%;
+  display: block;
+  z-index: 1;
+  transform: translate(0px, -50%);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+}
+.slick-prev {
+  left: calc(50% - 8.625rem);
+}
+.slick-next:before {
+  content: "";
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23a50034" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"/><path d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"/></svg>');
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-size: inherit;
+}
+.slick-prev:before {
+  content: "";
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23a50034" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>');
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-size: inherit;
+}
+.slick-dots {
+  position: relative;
+  display: block;
+  padding: 0px;
+  margin-top: 30px !important;
+  transform: translateY(50%);
+  list-style: none;
+  text-align: center;
+  line-height: 0;
+  width: 100%;
+  bottom: 0;
+}
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0px;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-dots li button {
+  position: relative;
+  line-height: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  padding: 0px;
+  margin: 0.125rem;
+  display: block;
+  cursor: pointer;
+  color: transparent;
+  border: 0px;
+  outline: none;
+  background: transparent;
+}
+.slick-dots li button::before {
+  line-height: 0;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: "";
+  border-radius: 50%;
+  text-align: center;
+  opacity: 0.26;
+  background-color: rgb(27, 26, 30);
+}
+.slick-dots li button:hover::before,
+.slick-dots li button:focus::before,
+.slick-dots li.slick-active button::before {
+  opacity: 1;
+  background-color: rgb(165, 0, 52);
+}
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  background-color: #a50034;
+  color: transparent;
+}
+.slick-dots li button:before {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  color: transparent;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.slick-hero-mobile .hero-card .copyblock {
+  padding: 0 30px 30px 30px;
+}
+.slick-hero .slick-dots {
+  margin-top: -80px !important;
+}
+
+.slick-hero-desktop .slick-dots {
+  margin-top: -50px !important;
+}
+@media (max-width: 599px) {
+  .slick-hero .slick-dots,
+  .slick-hero-desktop .slick-dots,
+  .slick-hero-mobile .slick-dots {
+    margin-top: -120px !important;
+  }
+
+  .slick-latestprods .slick-dots {
+    margin-top: -20px !important;
+  }
+}
+
+/*
+================================================================================================
+GALLERY CAROUSEL
+================================================================================================
+*/
+.gallery-carousel .slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+  display: none;
+  color: #737272;
+  font-family: "LG Smart Regular";
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+}
+.gallery-carousel .slick-dots a {
+  color: #737272;
+  transition: 0.3s all;
+}
+.gallery-carousel .slick-dots,
+.gallery-carousel .slick-dots .slick-active {
+  display: block;
+  padding-top: 5px;
+}
+.gallery-carousel .slick-dots a {
+  opacity: 1;
+  display: block;
+  transition: 0.3s all;
+}
+@media (max-width: 599px) {
+  .gallery-carousel .slick-dots {
+    margin-top: -20px !important;
+  }
+}
+
+/*
+================================================================================================
+SECTIOM PRODUCTS
+================================================================================================
+*/
+.section.products .container-skel {
+  padding-bottom: 50px;
+  background-color: #f0ece4;
+  border-radius: 50px;
+}
+
+.product-carousel .product,
+.product-carousel2 .product {
+  background-color: #fff;
+  padding: 20px;
+  margin: 0 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  z-index: 999999;
+  position: relative;
+  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.11);
+  -webkit-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.11);
+}
+.product-carousel .product img,
+.product-carousel2 .product img {
+  text-align: center;
+  margin: 0 auto;
+}
+.product-carousel .product h3,
+.product-carousel2 .product h3 {
+  font-size: 14px;
+  padding: 10px 0px;
+  letter-spacing: 0.071em;
+  text-align: left;
+}
+.product-carousel .product h2,
+.product-carousel2 .product h2 {
+  text-align: left;
+  font-size: 20px;
+  line-height: 26px;
+  padding: 5px 0px 20px 0px;
+  color: #666666;
+  min-height: 200px;
+  /* character limit */
+  /* display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-clamp: 2; */
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  .product-carousel .product h2,
+  .product-carousel2 .product h2 {
+    min-height: 350px;
+  }
+
+  .section.products .container-skel {
+    padding-bottom: 50px;
+    background-color: #f0ece4;
+    border-radius: 50px;
+  }
+}
+@media (max-width: 599px) {
+  .product-carousel .product h2,
+  .product-carousel2 .product h2 {
+    min-height: 200px;
+  }
+
+  .section.products .container-skel {
+    padding-bottom: 50px;
+    background-color: #f0ece4;
+    border-radius: 50px;
+  }
+}
+
+/*
+================================================================================================
+OVERLAY CARDS
+================================================================================================
+*/
+.overlaycard-wrap {
+  position: relative;
+}
+.overlaycard-wrap.dark-copy {
+  color: #000;
+}
+.overlaycard-wrap .copyblock .eyebrow {
+  padding-bottom: 10px;
+}
+.overlaycard-wrap .copyblock .title h2 {
+  /* font-family: 'LG Smart Regular';
+    font-weight: 400; */
+}
+.overlaycard-wrap .copyblock .copy {
+  padding: 10px 0px 20px 0px;
+  font-size: 20px;
+  line-height: 26px;
+}
+.overlaycard-wrap .copyblock .copy sup {
+  top: -1em;
+  font-size: 50%;
+}
+.overlaycard-wrap .copyblock .title h2 sup {
+  top: -1.5em;
+  font-size: 30%;
+}
+.overlaycard-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlaycard-left {
+  top: 75%;
+  left: 48%;
+  width: 620px;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+.overlaycard-right {
+  top: 50%;
+  left: 72%;
+  width: 660px;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+.overlaycard-center {
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+@media (min-width: 900px) and (max-width: 1199px) {
+  /* ==== TABLET LANDSCAPE ==== */
+  .overlaycard-left {
+    top: 50%;
+    left: 26%;
+    width: 450px;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: left;
+  }
+  .overlaycard-right {
+    top: 50%;
+    left: 72%;
+    width: 480px;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: left;
+  }
+  .overlaycard-center {
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+@media (min-width: 600px) and (max-width: 899px) {
+  /* ==== TABLET PORTRAIT & MOBILE LANDSCAPE ==== */
+  .overlaycard-left {
+    top: 54%;
+    left: 27%;
+    width: 350px;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: left;
+  }
+  .overlaycard-right {
+    top: 53%;
+    left: 72%;
+    width: 370px;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: left;
+  }
+  .overlaycard-center {
+    top: 65%;
+    left: 50%;
+    width: 600px;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+@media (max-width: 599px) {
+  /* ==== MOBILE PORTRAIT ==== */
+  .overlaycard-left,
+  .overlaycard-right,
+  .overlaycard-center {
+    top: 37%;
+    left: 50%;
+    width: 90%;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+/*
+================================================================================================
+PLP SELECT
+================================================================================================
+*/
+.section.plp-select {
+  padding: 0px 0px 75px 0px;
+}
+.section.plp-select .sectitle .title h2 {
+  font-size: 36px;
+  line-height: 40px;
+}
+.section.plp-select .container-skel {
+  background-color: #fff;
+  padding: 0px 0px 75px 0px;
+  border-radius: 50px;
+}
+.section.plp-select .copyblock {
+  text-align: center;
+}
+.section.plp-select .two.columns {
+  text-align: center;
+}
+.section.plp-select .plp-name {
+  padding: 20px 0px 5px 0px;
+  font-family: "LG Smart SemiBold";
+  font-size: 21px;
+  line-height: 26px;
+  min-height: 80px;
+}
+/* ALL IPAD PROS */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .section.plp-select .plp-name {
+    min-height: 80px;
+  }
+}
+
+/*
+================================================================================================
+MORE TO EXPLORE 
+================================================================================================
+*/
+.section.moretoexplore {
+  padding: 0px 0px 75px 0px;
+}
+.section.moretoexplore .ten.columns {
+  width: 89.666667%;
+  margin-left: 5.666667%;
+}
+.section.moretoexplore .sectitle {
+  padding: 20px 0px;
+}
+.section.moretoexplore .static-card {
+  position: relative;
+}
+.section.moretoexplore .static-card .copyblock .eyebrow {
+  font-size: 14px;
+  line-height: 26px;
+  padding-bottom: 10px;
+  letter-spacing: 0.071em;
+  text-transform: uppercase;
+}
+.section.moretoexplore .static-card .copyblock .title h2 {
+  font-family: "LG Smart Regular";
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 31px;
+}
+.section.moretoexplore .static-card-overlay .copyblock.left {
+  max-width: 430px;
+  width: 100%;
+  position: relative;
+  left: 54%;
+  top: 29%;
+  transform: translateX(-50%);
+}
+.section.moretoexplore .static-card-overlay .copyblock.center {
+  max-width: 520px;
+  width: 40%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.section.moretoexplore .static-card-overlay .copyblock.right {
+  max-width: 520px;
+  width: 40%;
+  position: relative;
+  left: 75%;
+  transform: translateX(-50%);
+}
+.section.moretoexplore .static-card .copyblock .copy {
+  font-size: 18px;
+  line-height: 22px;
+  padding: 10px 0px 30px 0px;
+  min-height: 60px;
+}
+.section.moretoexplore .static-card .copyblock .copy sup {
+  top: -1em;
+  font-size: 50%;
+}
+.section.moretoexplore .static-card .copyblock .title h2 sup {
+  top: -1.5em;
+  font-size: 30%;
+}
+.section.moretoexplore .cta a.newbtn.outline,
+.section.moretoexplore .cta a.newbtn.outlinew {
+  margin: inherit !important;
+}
+.section.moretoexplore .static-card-overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: none;
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+@media (max-width: 1199px) {
+  .section.moretoexplore .static-card-overlay .copyblock.left {
+    max-width: 520px;
+    width: 100%;
+    position: relative;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+  }
+  .section.moretoexplore .static-card-overlay .copyblock.center {
+    max-width: 520px;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  .section.moretoexplore .static-card-overlay .copyblock.right {
+    max-width: 520px;
+    width: 40%;
+    position: relative;
+    left: 75%;
+    transform: translateX(-50%);
+  }
+}
+
+/* ALL IPAD PROS */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .section.moretoexplore .static-card-overlay .copyblock.left {
+    max-width: 230px;
+    width: 100%;
+    position: relative;
+    left: 47%;
+    top: 25%;
+    transform: translateX(-50%);
+  }
+  .section.moretoexplore .static-card .copyblock .title h2 {
+    font-family: "LG Smart Regular";
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+  }
+  .section.moretoexplore .static-card .copyblock .copy {
+    font-size: 0.85rem;
+    line-height: 1rem;
+    padding: 5px 0px 10px 0px;
+  }
+}
+/* IPAD PRO LANDSCAPE */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .section.moretoexplore .static-card-overlay .copyblock.left {
+    left: 40%;
+  }
+  .static-card-overlay .copyblock.left {
+    left: 42%;
+  }
+}
+/* IPAD LANDSCAPE */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .section.moretoexplore .static-card-overlay .copyblock.left {
+    left: 50%;
+  }
+}
+
+@media (max-width: 899px) {
+  .section.moretoexplore .tout-wrap {
+    padding: 0px 30px;
+  }
+  .section.moretoexplore .dark-copy,
+  .section.moretoexplore .light-copy {
+    color: #000;
+  }
+  .section.moretoexplore .dark-copy div.cta a.newbtn.outlinew,
+  .section.moretoexplore .light-copy div.cta a.newbtn.outlinew {
+    margin: inherit !important;
+    outline: 2px solid #000 !important;
+    background-color: transparent !important;
+    color: #000 !important;
+  }
+  .section.moretoexplore .static-card-overlay {
+    color: #000;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    top: 0;
+    left: 0;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    padding: 4rem;
+  }
+  .section.moretoexplore .container-skel {
+    padding: 0px;
+  }
+  .section.moretoexplore .static-card-overlay .copy {
+    min-height: inherit;
+  }
+  .section.moretoexplore .static-card-overlay {
+    padding: 2rem 10% 4rem;
+  }
+  .section.moretoexplore .static-card {
+    background-color: #fff;
+    margin-bottom: 50px;
+  }
+  .section.moretoexplore .static-card .copyblock .title h2 {
+    font-size: 27px;
+    line-height: 36px;
+  }
+  .section.moretoexplore .static-card .copyblock .copy {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .section.moretoexplore .static-card-overlay {
+    min-height: 450px;
+  }
+}
+
+@media (max-width: 599px) {
+  .section.moretoexplore .tout-wrap {
+    padding: 0px;
+  }
+  .section.moretoexplore .dark-copy,
+  .section.moretoexplore .light-copy {
+    color: #000;
+  }
+  .section.moretoexplore .dark-copy div.cta a.newbtn.outlinew,
+  .section.moretoexplore .light-copy div.cta a.newbtn.outlinew {
+    margin: inherit !important;
+    outline: 2px solid #000 !important;
+    background-color: transparent !important;
+    color: #000 !important;
+  }
+  .section.moretoexplore .ten.columns {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .section.moretoexplore .container-skel {
+    padding: 0px;
+  }
+  .section.moretoexplore .static-card-overlay .copy {
+    min-height: inherit;
+  }
+  .section.moretoexplore .static-card-overlay {
+    padding: 2rem 10% 4rem;
+  }
+  .section.moretoexplore .static-card {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+59&0+47,1+59 */
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0) 47%,
+      rgba(255, 255, 255, 1) 59%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    margin-bottom: 50px;
+  }
+  .section.moretoexplore .static-card .copyblock .title h2 {
+    font-size: 27px;
+    line-height: 36px;
+  }
+  .section.moretoexplore .static-card .copyblock .copy {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+/*
+================================================================================================
+INNOVATIONS 
+================================================================================================
+*/
+.section.innovations {
+  padding: 0px 0px 75px 0px;
+}
+.section.innovations .row.tout-wrap {
+  padding: 0px 0px 50px 0px;
+}
+.section.innovations .ten.columns {
+  width: 89.666667%;
+  margin-left: 5.666667%;
+}
+.section.innovations .sectitle {
+  padding: 20px 0px;
+}
+.section.innovations .static-card {
+  position: relative;
+}
+.section.innovations .static-card .copyblock .eyebrow {
+  font-size: 14px;
+  line-height: 26px;
+  padding-bottom: 10px;
+  letter-spacing: 0.071em;
+  text-transform: uppercase;
+}
+.section.innovations .static-card .copyblock .title h2 {
+  font-family: "LG Smart Regular";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.9);
+}
+.section.innovations .static-card-overlay .copyblock.left {
+  max-width: 550px;
+  width: 100%;
+  position: relative;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+}
+.section.innovations .static-card-overlay .copyblock.center {
+  max-width: 520px;
+  width: 40%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.section.innovations .static-card-overlay .copyblock.right {
+  max-width: 520px;
+  width: 40%;
+  position: relative;
+  left: 75%;
+  transform: translateX(-50%);
+}
+.section.innovations .static-card .copyblock .copy {
+  font-size: 20px;
+  line-height: 26px;
+  padding: 10px 0px 10px 0px;
+  text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.9);
+}
+.section.innovations .static-card .copyblock .copy sup {
+  top: -1em;
+  font-size: 50%;
+}
+.section.innovations .static-card .copyblock .title h2 sup {
+  top: -1.5em;
+  font-size: 30%;
+}
+.section.innovations .cta a.newbtn.outline,
+.section.innovations .cta a.newbtn.outlinew {
+  margin: inherit !important;
+}
+.section.innovations .static-card-overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: none;
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+@media (max-width: 1199px) {
+  .section.innovations .static-card-overlay .copyblock.left {
+    max-width: 520px;
+    width: 100%;
+    position: relative;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+  }
+  .section.innovations .static-card-overlay .copyblock.center {
+    max-width: 520px;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  .section.innovations .static-card-overlay .copyblock.right {
+    max-width: 520px;
+    width: 40%;
+    position: relative;
+    left: 75%;
+    transform: translateX(-50%);
+  }
+}
+/* IPAD PRO PORTRAIT */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .section.innovations .static-card-overlay .copyblock.left {
+    max-width: 400px;
+    left: 52%;
+    top: 5%;
+  }
+}
+/* IPAD PRO LANDSCAPE */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .section.innovations .static-card-overlay .copyblock.left {
+    max-width: 400px;
+    left: 39%;
+    top: 24%;
+  }
+  .section.innovations .static-card .copyblock .title h2 {
+    font-family: "LG Smart Regular";
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+  .section.innovations .static-card .copyblock .copy {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+}
+/* IPAD LANDSCAPE */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .section.innovations .static-card-overlay .copyblock.left {
+    max-width: 400px;
+    left: 52%;
+  }
+}
+@media (max-width: 899px) {
+  .section.innovations .tout-wrap {
+    padding: 0px 30px;
+  }
+  .section.innovations .dark-copy,
+  .section.innovations .light-copy {
+    color: #000;
+  }
+  .section.innovations .dark-copy div.cta a.newbtn.outlinew,
+  .section.innovations .light-copy div.cta a.newbtn.outlinew {
+    margin: inherit;
+    outline: 2px solid #000;
+    background-color: transparent;
+    color: #000;
+  }
+  .section.innovations .static-card-overlay {
+    color: #000;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    top: 0;
+    left: 0;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    padding: 4rem;
+  }
+  .section.innovations .ten.columns {
+    width: inherit;
+    margin-left: inherit;
+  }
+  .section.innovations .container-skel {
+    padding: 0px;
+  }
+  .section.innovations .static-card-overlay .copy {
+    min-height: inherit;
+  }
+  .section.innovations .static-card-overlay {
+    padding: 2rem 10% 4rem;
+    min-height: 330px;
+  }
+  .section.innovations .static-card {
+    background-color: #fff;
+    margin-bottom: 50px;
+  }
+  .section.innovations .static-card .copyblock .title h2 {
+    font-size: 27px;
+    line-height: 36px;
+  }
+  .section.innovations .static-card .copyblock .copy {
+    font-size: 16px;
+    line-height: 24px;
+    min-height: 100px;
+  }
+  .section.innovations .static-card .copyblock .title h2 {
+    font-size: 27px;
+    line-height: 36px;
+    text-shadow: 0px 3px 7px rgba(0, 0, 0, 0);
+  }
+  .section.innovations .static-card .copyblock .copy {
+    font-size: 16px;
+    line-height: 24px;
+    text-shadow: 0px 3px 7px rgba(0, 0, 0, 0);
+  }
+}
+@media (max-width: 599px) {
+  .section.innovations .sectitle {
+    padding: 0px 0px 20px 0px;
+  }
+  .section.innovations .tout-wrap {
+    padding: 0px;
+  }
+  .section.innovations .dark-copy,
+  .section.innovations .light-copy {
+    color: #000;
+  }
+  .section.innovations .dark-copy div.cta a.newbtn.outlinew,
+  .section.innovations .light-copy div.cta a.newbtn.outlinew {
+    margin: inherit !important;
+    outline: 2px solid #000 !important;
+    background-color: transparent !important;
+    color: #000 !important;
+  }
+  .section.innovations .ten.columns {
+    width: inherit;
+    margin-left: inherit;
+  }
+  .section.innovations .container-skel {
+    padding: 0px;
+  }
+  .section.innovations .static-card-overlay .copy {
+    min-height: inherit;
+  }
+  .section.innovations .static-card-overlay {
+    padding: 2rem 10% 4rem;
+  }
+  .section.innovations .static-card {
+    background-color: #fff;
+    margin-bottom: 50px;
+  }
+}
+
+/*
+================================================================================================
+LARGEBANNER 
+================================================================================================
+*/
+.section.largebanner {
+  padding: 0px 0px 75px 0px;
+}
+.section.largebanner .ten.columns {
+  width: 89.666667%;
+  margin-left: 5.666667%;
+}
+.section.largebanner .sectitle {
+  padding: 20px 0px;
+}
+.section.largebanner .static-card {
+  position: relative;
+}
+.section.largebanner .static-card .copyblock .eyebrow {
+  font-size: 14px;
+  line-height: 26px;
+  padding-bottom: 10px;
+  letter-spacing: 0.071em;
+  text-transform: uppercase;
+}
+.section.largebanner .static-card .copyblock .title h2 {
+  font-family: "LG Smart Regular";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+}
+.section.largebanner .static-card .copyblock .copy {
+  font-size: 20px;
+  line-height: 26px;
+  padding: 20px 0px 30px 0px;
+}
+.section.largebanner .static-card .copyblock .copy sup {
+  top: -1em;
+  font-size: 50%;
+}
+.section.largebanner .static-card .copyblock .title h2 sup {
+  top: -1.5em;
+  font-size: 30%;
+}
+.section.largebanner .static-card-overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: none;
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+.section.largebanner a {
+  text-decoration: underline;
+}
+.section.largebanner .light-copy a {
+  color: #fff;
+}
+.section.largebanner a.newbtn {
+  text-decoration: none;
+}
+.section.largebanner.bannerradius .static-card img {
+  border-radius: 50px;
+}
+@media (min-width: 900px) {
+  .section.largebanner .static-card-overlay .copyblock.left {
+    max-width: 520px;
+    width: 40%;
+    position: relative;
+    left: 25%;
+    transform: translateX(-50%);
+  }
+  .section.largebanner .static-card-overlay .copyblock.center {
+    max-width: 520px;
+    width: 40%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  .section.largebanner .static-card-overlay .copyblock.right {
+    max-width: 520px;
+    width: 40%;
+    position: relative;
+    left: 80%;
+    transform: translateX(-50%);
+  }
+}
+/* ALL IPAD PROS */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .section.largebanner .static-card .copyblock .title h2 {
+    font-family: "LG Smart Regular";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .section.largebanner .static-card .copyblock .copy {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+  .section.largebanner .static-card-overlay .copyblock.right {
+    max-width: 380px;
+  }
+}
+@media (max-width: 899px) {
+  .section.largebanner .dark-copy,
+  .section.largebanner .light-copy {
+    color: #000;
+  }
+  .section.largebanner .dark-copy div.cta a.newbtn.outlinew,
+  .section.largebanner .light-copy div.cta a.newbtn.outlinew {
+    margin: inherit !important;
+    outline: 2px solid #000 !important;
+    background-color: transparent !important;
+    color: #000 !important;
+  }
+  .section.largebanner .static-card-overlay {
+    color: #000;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    top: 0;
+    left: 0;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    padding: 4rem;
+  }
+  .section.largebanner .ten.columns {
+    width: inherit;
+    margin-left: inherit;
+  }
+  .section.largebanner .container-skel {
+    padding: 0px;
+  }
+  .section.largebanner .static-card-overlay .copy {
+    min-height: inherit;
+  }
+  .section.largebanner .static-card-overlay {
+    padding: 2rem 10% 4rem;
+  }
+  .section.largebanner .static-card {
+    background-color: #fff;
+    margin-bottom: 50px;
+  }
+  .section.largebanner .static-card .copyblock .title h2 {
+    font-size: 27px;
+    line-height: 36px;
+  }
+  .section.largebanner .static-card .copyblock .copy {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 599px) {
+  .section.largebanner {
+    padding: 0px;
+  }
+  .section.largebanner .dark-copy,
+  .section.largebanner .light-copy {
+    color: #000;
+  }
+  .section.largebanner .dark-copy div.cta a.newbtn.outlinew,
+  .section.largebanner .light-copy div.cta a.newbtn.outlinew {
+    margin: inherit !important;
+    outline: 2px solid #000 !important;
+    background-color: transparent !important;
+    color: #000 !important;
+  }
+  .section.largebanner .ten.columns {
+    width: inherit;
+    margin-left: inherit;
+  }
+  .section.largebanner .container-skel {
+    padding: 0px;
+  }
+  .section.largebanner .static-card-overlay .copy {
+    min-height: inherit;
+  }
+  .section.largebanner .static-card-overlay {
+    padding: 2rem 10% 4rem;
+  }
+  .section.largebanner .static-card {
+    background-color: #fff;
+    margin-bottom: 50px;
+    border-radius: 50px 50px 0 0;
+  }
+  .section.largebanner .static-card .copyblock .title h2 {
+    font-size: 27px;
+    line-height: 36px;
+  }
+  .section.largebanner .static-card .copyblock .copy {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .section.largebanner .light-copy a {
+    color: #000;
+  }
+  .section.largebanner a.newbtn {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+/*
+================================================================================================
+SECTION CURRENTOWNERS
+================================================================================================
+*/
+.section.currentowners {
+  padding: 0 0 100px 0px;
+}
+.section.currentowners .sectitle {
+  text-align: center;
+  font-size: 20px;
+  line-height: 26px;
+  padding: 50px 0px 30px 0px;
+  color: #666666;
+}
+.section.currentowners .sectitle .copy {
+  padding: 0px 0px 30px 0px;
+}
+.section.currentowners .sectitle .cta {
+  padding: 0px 0px 30px 0px;
+}
+.section.currentowners .sectitle .title h2 {
+  font-family: "LG Smart Regular";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  padding-top: 25px;
+  color: #000;
+}
+.section.currentowners .utility-block {
+  text-align: center;
+}
+.section.currentowners .utility-block .icon {
+  padding: 10px 0;
+}
+.section.currentowners .utility-block .title h2 {
+  font-family: "LG Smart Regular";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  padding-bottom: 10px;
+}
+.section.currentowners .utility-block .copy {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 0px 0px 25px 0px;
+  color: #666666;
+}
+.section.currentowners .two.columns {
+  width: 16.333333%;
+  background-color: #f9f7f4;
+  border-radius: 30px;
+  padding: 15px 30px;
+}
+@media (min-width: 900px) and (max-width: 1199px) {
+  .section.currentowners .two.columns {
+    width: 30.6666666667%;
+    background-color: #f9f7f4;
+    border-radius: 30px;
+    padding: 15px 30px;
+    margin-bottom: 50px;
+  }
+
+  .section.currentowners .two.columns:nth-child(4) {
+    margin: 0 0 50px 0;
+  }
+  .section.currentowners .two.columns {
+    width: 30.333333%;
+  }
+  .section.currentowners .two.columns:nth-child(4) {
+    margin-left: 18%;
+  }
+}
+@media (min-width: 600px) and (max-width: 899px) {
+  .section.currentowners .two.columns {
+    width: 30.333333%;
+    margin-bottom: 30px;
+  }
+  .section.currentowners .two.columns:nth-child(4) {
+    margin-left: 18%;
+  }
+}
+@media (max-width: 599px) {
+  .section.currentowners .sectitle {
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 50px 0px 30px 0px;
+    color: #666666;
+  }
+  .section.currentowners .sectitle .copy {
+    padding: 0px 0px 30px 0px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .section.currentowners .sectitle .cta {
+    padding: 0px 0px 30px 0px;
+    font-size: 16px;
+  }
+  .section.currentowners .sectitle .title h2 {
+    font-family: "LG Smart Regular";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    padding-top: 25px;
+    color: #000;
+  }
+  .section.currentowners .utility-block {
+    text-align: center;
+  }
+  .section.currentowners .utility-block .icon {
+    padding: 10px 0;
+  }
+  .section.currentowners .utility-block .title h2 {
+    font-family: "LG Smart Regular";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .section.currentowners .utility-block .copy {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0px 20px 25px 20px;
+    color: #666666;
+    margin: 0 auto;
+  }
+  .section.currentowners .two.columns {
+    width: 44%;
+    margin-left: 4%;
+    background-color: #f9f7f4;
+    border-radius: 30px;
+    padding: 15px 0px;
+    margin-bottom: 15px;
+  }
+  .section.currentowners .two.columns:nth-child(5) {
+    margin-left: 28%;
+  }
+}
+
+/*
+================================================================================================
+SECTION BETTERWAY
+================================================================================================
+*/
+.section.betterway .container-skel {
+  background-color: #f9f7f4;
+}
+.section.betterway .betterway-custombg {
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.01);
+  -webkit-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.01);
+  -moz-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.01);
+  margin: 100px 0px 120px 140px;
+  padding-bottom: 80px;
+}
+.section.betterway .sectitle {
+  text-align: center;
+  font-size: 20px;
+  line-height: 26px;
+  padding: 50px 0px 30px 0px;
+  color: #666666;
+}
+.section.betterway .sectitle .title h2 {
+  font-family: "LG Smart Regular";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  padding-top: 25px;
+  color: #000;
+}
+.section.betterway .utility-block {
+  text-align: center;
+  padding: 0 20px;
+}
+.section.betterway .utility-block .icon {
+  padding: 10px 0;
+}
+.section.betterway .utility-block .title h2 {
+  font-family: "LG Smart Regular";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+}
+.section.betterway .utility-block .copy {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 0px 30px 25px 30px;
+  color: #666666;
+}
+.section.betterway
+  .ten.columns.offset-by-one.betterway-custombg
+  .three.columns.offset-by-one {
+  margin-left: 11.666667%;
+}
+/* ALL IPAD PROS */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .section.betterway .utility-block .copy {
+    padding: 0px 0px 0px 0px;
+  }
+}
+@media (min-width: 900px) and (max-width: 1199px) {
+  .section.betterway .utility-block .copy {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0px 0px 25px 0px;
+    color: #666666;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .section.betterway .betterway-custombg {
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.01);
+    -webkit-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.01);
+    -moz-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.01);
+    margin: 100px 0px 120px 90px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (min-width: 768px) {
+  .section.betterway .utility-block .copy {
+    padding: 0px 0px 0px 0px;
+  }
+}
+@media (min-width: 600px) and (max-width: 899px) {
+  .section.betterway .betterway-custombg {
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.01);
+    -webkit-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.01);
+    -moz-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.01);
+    margin: 100px 0px 120px 70px;
+    padding-bottom: 80px;
+  }
+  .section.betterway .utility-block {
+    text-align: center;
+    padding: 0px;
+  }
+}
+@media (max-width: 599px) {
+  .section.betterway .container-skel {
+    background-color: #f9f7f4;
+    padding: 100px 0px;
+  }
+  .section.betterway .sectitle {
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 50px 0px 30px 0px;
+    color: #666666;
+  }
+  .section.betterway .sectitle .title h2 {
+    font-family: "LG Smart Regular";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    padding-top: 25px;
+    color: #000;
+  }
+  .section.betterway .utility-block {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .section.betterway .utility-block .icon {
+    padding: 10px 0;
+  }
+  .section.betterway .utility-block .title h2 {
+    font-family: "LG Smart Regular";
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .section.betterway .utility-block .copy {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0px 20px 25px 20px;
+    color: #666666;
+    margin: 0 auto;
+  }
+  .section.betterway
+    .ten.columns.offset-by-one.betterway-custombg
+    .three.columns.offset-by-one {
+    margin-left: inherit;
+  }
+  .section.betterway .betterway-custombg {
+    margin: 0px;
+  }
+}
+
+/*
+================================================================================================
+MOBILE LANDSCAPE & TABLET PORTRAIT
+================================================================================================
+*/
+@media (min-width: 600px) and (max-width: 899px) {
+  .for-mobile {
+    display: inherit !important;
+  }
+  .for-desktop {
+    display: none !important;
+  }
+}
+
+/*
+================================================================================================
+MOBILE PORTRAIT 
+================================================================================================
+*/
+@media (max-width: 599px) {
+  .for-mobile {
+    display: inherit !important;
+  }
+  .for-desktop {
+    display: none !important;
+  }
+}
